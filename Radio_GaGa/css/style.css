@@ -1,0 +1,245 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: red;
+  color: white;
+}
+
+.link {
+  text-decoration: underline;
+  color: orange;
+  font-weight: bold;
+  border: 2px solid orange;
+  border-radius: 20px;
+  padding: 8px 16px;
+  background-color: peachpuff;
+  transition: 0.3s;
+}
+
+.link:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.schedule-table {
+  border: 3px solid orange;
+}
+
+.popular-artists-page {
+  display: flex;
+  justify-content: center;
+}
+
+.yt_icon:hover{
+  transform: scale(1.2);
+}
+
+.zebra-table a{
+  color: white;
+}
+
+.zebra-table a:hover{
+  color: orange;
+}
+
+.zebra-table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.zebra-table th, 
+.zebra-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.zebra-table thead {
+  background-color: #333;
+  color: white;
+}
+
+.zebra-table tbody tr:nth-child(even) {
+  background-color: #b56f6f;
+}
+
+.zebra-table tbody tr:hover {
+  background-color: #d49a9a;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: red;
+  border-bottom: 2px solid orange;
+}
+
+#logo {
+  transition: 0.3s;
+}
+
+#logo:hover {
+  transform: rotate(5deg) scale(1.05);
+}
+
+nav {
+  border: 2px solid orange;
+  padding: 15px;
+  justify-content: space-around;
+  background-color: orangered;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+nav a {
+  color: orange;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: white;
+  text-shadow: 0 0 8px orange;
+}
+
+.conctact-page {
+  border: 2px solid orange;
+  padding: 15px;
+  justify-content: center;
+  background-color: orangered;
+  text-align: center;
+}
+
+.top-section {
+  margin: 20px auto;
+  border: 2px solid orange;
+  border-radius: 15px;
+  max-width: 500px;
+  padding: 15px;
+  text-align: center;
+}
+
+.form-section {
+  border: 2px solid orange;
+  border-radius: 15px;
+  padding: 15px;
+  max-width: 500px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.form-section input, .form-section textarea {
+  padding: 6px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+main {
+  padding: 30px;
+  text-align: center;
+}
+
+#table {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.artist-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 50px;
+}
+
+.artist-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(3px);
+  padding: 15px;
+  border-radius: 12px;
+  width: 300px;
+  text-decoration: none;
+  color: white;
+  transition: 0.2s;
+}
+
+.album-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.album-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(3px);
+  padding: 15px;
+  border-radius: 12px;
+  width: 220px;
+  text-decoration: none;
+  color: white;
+  transition: 0.2s;
+}
+
+.album-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.album-card:hover {
+  transform: scale(1.05);
+  background: rgba(255, 165, 0, 0.2);
+}
+
+.album-cover {
+  max-width: 100px;
+  max-height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.track-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 20px auto;
+  max-width: 500px;
+}
+
+.track-item {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+audio {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 5px;
+  transition: transform 0.2s;
+}
+
+audio:hover {
+  transform: scale(1.05);
+}
+
+audio::-webkit-media-controls-panel{
+  background: linear-gradient(75deg, red, orange);
+}
+
+audio::-webkit-media-controls-panel:hover{
+  background: linear-gradient(75deg, orange, red);
+}
